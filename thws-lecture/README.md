@@ -33,8 +33,10 @@ Der Server unterstützt alle auf https://business.thws.de/studierende/vorlesungs
 
 ### Dependencies installieren
 
+Um alle Abhängikeiten zu installieren, bitte folgenden Befehl im thws-scheudler Verzeichnis ausführen. Es wird empfohlen, das mit einer virtuellen Umgebung zu machen.
+
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Verwendung
