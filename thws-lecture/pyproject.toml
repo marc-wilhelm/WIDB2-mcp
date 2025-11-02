@@ -1,0 +1,11 @@
+[project]
+name = "thws-lecture"
+version = "0.1.0"
+description = "Ein Model Context Protocol (MCP) Server, der LLMs direkten Zugriff auf die Vorlesungspläne der THWS Business-Fakultät ermöglicht."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.20.0",
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+]

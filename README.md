@@ -16,6 +16,7 @@
   - [Voraussetzungen](#voraussetzungen)
   - [Projekt erstellen](#projekt-erstellen)
   - [MCP hinzufügen](#mcp-hinzufügen)
+- [Use Case](#use-case)
 
 ## Installation
 
@@ -51,3 +52,7 @@ MCP zu den Projektabhängigkeiten hinzufügen. Dieser Befehl erstellt automatisc
 ```bash
 uv add "mcp[cli]"
 ```
+
+## Use Case
+
+Ein konkreter use case wurde in dem Unterordner thws-scheduler erstellt. Mehr Informationen sind [hier](thws-lecture/README.md) ersichtlich.
