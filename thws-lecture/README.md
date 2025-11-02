@@ -65,22 +65,37 @@ Dies führt zwei Tests aus:
 
 ### Claude Desktop Integration
 
-Füge folgenden Eintrag in deine Claude Desktop Config hinzu:
+Füge folgenden Eintrag in deine Claude Desktop Config hinzu (`claude_desktop_config.json`):
 
 ```json
 {
   "mcpServers": {
-    "thws-schedule": {
-      "command": "python",
+    "thws-lecture": {
+      "command": "<PFAD>/uv.exe",
       "args": [
-        "/pfad/zum/business-thws-lecture.py"
+        "--directory",
+        "<PFAD>/WIDB2-mcp/thws-lecture",
+        "run",
+        "business-thws-lecture.py"
       ]
     }
   }
 }
 ```
 
-Die Config Datei ist leicht zu finden über Claude: Profil > Einstellungen > Entwickler > Config bearbeiten
+**Wichtig:** Ersetze `<PFAD>` mit deinem absoluten Pfad.
+
+**uv-Pfad finden:**
+```bash
+# Windows (PowerShell)
+where.exe uv
+
+# Linux/macOS
+which uv
+```
+
+**Config-Datei öffnen:**  
+Claude Desktop → Profil → Einstellungen → Entwickler → Config bearbeiten
 
 ### Andere MCP-Clients
 
