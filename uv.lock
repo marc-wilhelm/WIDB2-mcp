@@ -672,6 +672,9 @@ requires-dist = [
     { name = "requests", specifier = ">=2.31.0" },
 ]
 
+[package.metadata]
+requires-dist = [{ name = "mcp", extras = ["cli"], specifier = ">=1.20.0" }]
+
 [[package]]
 name = "typer"
 version = "0.20.0"
